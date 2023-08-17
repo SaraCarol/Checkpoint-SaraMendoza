@@ -1,0 +1,36 @@
+507  mkdir "Checkpoint-SaraMendoza"
+  508  cd Checkpoint-SaraMendoza/
+  509  clear
+  510  git init
+  511  git branch -m main
+  512  git remote add origin git@github.com:SaraCarol/Checkpoint-SaraMendoza.git
+  513  git remote -v
+  514  touch main.js
+  515  touch index.html
+  516  git status
+  517  git add .
+  518  git commit -m "commit 01 de Sara Mendoza"
+  519  git push origin main
+  520  git branch feature
+  521  git checkout feature
+  522  mkdir Hardware
+  523  mkdir Software
+  524  mkdir SeguridadInformatica
+  525  cd Hardware/
+  526  touch resumen.txt
+  527  cd ..
+  528  cd Software/
+  529  touch resumen.txt
+  530  cd ..
+  531  cd SeguridadInformatica/
+  532  touch resumen.txt
+  533  cd ..
+  534  git add .
+  535  git commit -m "commit 02 de Sara Mendoza"
+  536  git push origin feature
+  537  git checkout main
+  538  mv main.js "resumenHardware.txt"
+  539  mv index.html "resumenSoftware.txt"
+  540  cd resumenSoftware.txt
+  541  touch comandos.txt
+  542  history
